@@ -1,31 +1,25 @@
-package gov.rispd.test.pages;
+package gov.aries.pages;
 
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.DefaultUrl;
-
 import net.thucydides.core.pages.PageObject;
 
 @DefaultUrl("http://www.wikipedia.org")
-public class RISPDHomepage extends PageObject {
+public class Homepage extends PageObject {
 
 	private String env = System.getProperty("environment");
 
-	public RISPDHomepage(WebDriver driver) {
+	public Homepage(WebDriver driver) {
 		super(driver);
 		driver.manage().window().maximize();
-
-		// this.setImplicitTimeout(10, TimeUnit.SECONDS);
-
 	}
 
 	public void clearCookies() {

@@ -73,7 +73,7 @@
                 <version>2.18.1</version>
                 <configuration>
                     <includes>
-                        <include>**/RISPDAcceptanceTestSuite.java</include>
+                        <include>**/AriesAcceptanceTestSuite.java</include>
                     </includes>
                     <systemPropertyVariables>
                         <webdriver.driver>${webdriver.driver}</webdriver.driver>

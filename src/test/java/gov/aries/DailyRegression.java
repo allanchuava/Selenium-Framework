@@ -1,4 +1,4 @@
-package gov.rispd.test;
+package gov.aries;
 
 import net.thucydides.core.annotations.Steps;
 import org.jbehave.core.annotations.Given;
